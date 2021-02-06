@@ -103,7 +103,6 @@ main {
 }
 
 .baner {
-  width: 896px;
   height: 445px;
   display: flex;
   flex-direction: column;
@@ -114,7 +113,6 @@ main {
 
 .baner__title {
   width: 272px;
-  height: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,19 +120,20 @@ main {
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.01em;
+  padding: 13px;
   color: #000000;
   background: #ffffff;
 }
 
 .baner__description {
   width: 487px;
-  height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-style: italic;
   font-size: 14px;
   line-height: 14px;
+  padding: 14px;
   color: #ffffff;
   background: #000000;
 }
@@ -142,12 +141,12 @@ main {
 /*menu*/
 .main__menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main__menu li {
-  width: 224px;
-  height: 85px;
   display: flex;
+  flex: 1;
   align-items: center;
   border-left: 1px solid #f9fbfb;
   border-right: 1px solid #d6e6e6;
@@ -163,8 +162,7 @@ li.active {
 }
 
 .main__menu li a {
-  width: 100%;
-  padding: 20px;
+  padding: 26px 54px 22px 19px;
   font-size: 18px;
   line-height: 18px;
 }
@@ -228,11 +226,13 @@ input::placeholder {
 /*cards*/
 .cards__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   flex: 0;
 }
@@ -240,7 +240,7 @@ input::placeholder {
 .card__image {
   outline: 1px solid #e5e5e5;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
-  margin-bottom: 11px;
+  margin-bottom: 7px;
 }
 
 .card__link__title {
@@ -265,12 +265,20 @@ input::placeholder {
   color: #e5e5e5;
 }
 
-.card__read_more {
+.date::after {
+  content: "/";
+  margin-left: 5px;
+}
+
+.link__read_more {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.02em;
 }
 
+.link__read_more::after {
+  content: "...";
+}
 /*Footer*/
 
 footer {
