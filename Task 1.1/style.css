@@ -445,6 +445,11 @@ p.rights {
     padding: 0 20px;
   }
 
+  .baner {
+    background: url("assets/baner-sm.png") 50% 50% no-repeat;
+    height: 353px;
+  }
+
   .cards__wrapper {
     padding: 0 50px;
   }
