@@ -191,6 +191,10 @@ form {
   padding: 7px 18px 10px;
 }
 
+.subscribe__text__wrapper {
+  display: flex;
+}
+
 p.subscribe__text {
   font-style: italic;
   font-size: 14px;
@@ -244,9 +248,9 @@ input::placeholder {
   width: 23%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .card {
-    width: 49.9%;
+    width: 47%;
   }
 }
 
@@ -344,7 +348,7 @@ p.rights {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .wrapper {
     flex-direction: column;
   }
@@ -382,10 +386,70 @@ p.rights {
   }
 
   footer {
-    margin: 0;
+    margin: 0 20px;
   }
 }
 
-@media (max-width: 767px) {
-  
+@media (max-width: 768px) {
+  .logo__aside_wrapper {
+    margin-right: 0;
+  }
+
+  .icon__menu__aside {
+    display: none;
+  }
+
+  .baner__title {
+    width: 100%;
+    opacity: 0.5;
+    justify-content: end;
+  }
+
+  .baner__description {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .baner {
+    padding-bottom: 0;
+  }
+
+  .main__menu {
+    display: none;
+  }
+  form {
+    flex-direction: column;
+  }
+
+  .input__wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding: 30px 0;
+  }
+
+  aside {
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+
+  .cards__wrapper {
+    padding: 0 50px;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
