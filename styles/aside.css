@@ -1,0 +1,90 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+  }
+  
+  .logo__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*menu*/
+  .aside-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aside-navigation li {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 31px;
+  }
+  
+  .aside-navigation li a {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  .aside-navigation__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+  }
+  
+  .aside-navigation__icon_food {
+    background: url("../assets/icon-menu/food-icon.svg") no-repeat;
+  }
+  
+  .aside-navigation__icon_blog {
+    background: url("../assets/icon-menu/blog-icon.svg") no-repeat;
+  }
+  
+  .aside-navigation__icon_list {
+    background: url("../assets/icon-menu/a-list-icon.svg") no-repeat;
+  }
+  
+  .aside-navigation__icon_camera {
+    background: url("../assets/icon-menu/camera-icon.svg") no-repeat;
+  }
+  
+  .aside-navigation__icon_about {
+    background: url("../assets/icon-menu/about-icon.svg") no-repeat;
+  }
+  
+  /*aside tweet*/
+  .tweet__title,
+  .friends__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    margin-bottom: 7px;
+  }
+  
+  .tweet__button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    font-style: italic;
+    font-size: 10px;
+    color: #34aca7;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .friends__text {
+    font-style: italic;
+    font-size: 10px;
+    line-height: 19px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }

@@ -1,0 +1,151 @@
+@media (min-width: 1177px) {
+    body {
+      max-width: 1200px;
+    }
+  }
+
+@media (max-width: 1176px) {
+    .main-menu__item-description {
+      display: none;
+    }
+  
+    .main-menu li {
+      justify-content: center;
+    }
+  
+    .main-menu li a {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    footer {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .aside-navigation {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    main {
+      padding: 0;
+      padding-bottom: 20px;
+    }
+  
+    aside {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .logo__wrapper {
+      margin-right: 90px;
+      padding-bottom: 20px;
+    }
+  
+    nav {
+      width: 100%;
+    }
+  
+    .tweet-friends {
+      display: none;
+    }
+  
+    .aside-navigation li a {
+      flex-direction: column;
+    }
+  
+    .aside-navigation__icon {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  
+    footer {
+      margin: 0 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo__wrapper {
+      margin-right: 10px;
+    }
+  
+    .aside-navigation__icon {
+      display: none;
+    }
+  
+    .baner__title {
+      width: 100%;
+      opacity: 0.5;
+      justify-content: end;
+    }
+  
+    .baner__description {
+      width: 100%;
+      justify-content: end;
+    }
+  
+    .baner {
+      padding-bottom: 0;
+    }
+  
+    .main-menu {
+      display: none;
+    }
+    form {
+      flex-direction: column;
+    }
+  
+    .subscribe {
+      padding-bottom: 10px;
+    }
+  
+    .input {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .input__email {
+      width: 100%;
+    }
+  
+    .card {
+      width: 47%;
+      padding-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      width: 100%;
+    }
+  
+    .wrapper {
+      padding: 30px 0;
+    }
+  
+    aside {
+      flex-direction: column-reverse;
+      padding: 0 10px;
+    }
+  
+    .baner {
+      background: url("../assets/baner-sm.png") 50% 50% no-repeat;
+      height: 353px;
+    }
+  
+    .cards__wrapper {
+      padding: 0 50px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  

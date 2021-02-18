@@ -1,0 +1,190 @@
+main {
+    width: 100%;
+    padding: 0 40px 20px;
+  }
+  
+  .baner {
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 70px;
+    background: url("../assets/baner.png") 50% 50%;
+    background-size: cover;
+  }
+  
+  .baner__title {
+    width: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    padding: 13px;
+    color: #000000;
+    background: #ffffff;
+  }
+  
+  .baner__description {
+    width: 487px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px;
+    color: #ffffff;
+    background: #000000;
+  }
+  
+  /*menu*/
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-menu li {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-left: 1px solid #f9fbfb;
+    border-right: 1px solid #d6e6e6;
+    background: #eff8f7;
+  }
+  
+  li.active {
+    background: #d9efec;
+  }
+  
+  .main-menu li:hover {
+    background: #d9efec;
+  }
+  
+  .main-menu li a {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    width: 100%;
+  }
+  
+  .main-menu__item-description {
+    font-style: italic;
+    font-size: 10px;
+    line-height: 19px;
+    color: #34aca7;
+  }
+  
+  /*subscribe*/
+  form {
+    display: flex;
+    margin: 30px 0 29px;
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 18px 10px;
+  }
+  
+  .subscribe {
+    display: flex;
+  }
+  
+  .subscribe__text {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 530px;
+    margin-left: 18px;
+    color: #000000;
+  }
+  
+  .input {
+    display: flex;
+    margin-left: 8px;
+  }
+  
+  .input__email {
+    width: 160px;
+    height: 22px;
+    border: 1px solid #e5e5e5;
+    margin-right: 13px;
+  }
+  
+  .input__email::placeholder {
+    font-size: 10px;
+    line-height: 10px;
+    color: #e5e5e5;
+    padding-left: 5px;
+  }
+  
+  .input__button {
+    width: 80px;
+    height: 23px;
+    background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  /*cards*/
+  .cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+  }
+  
+  .card__image {
+    width: 100%;
+    outline: 1px solid #e5e5e5;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+    margin-bottom: 7px;
+  }
+  
+  .card__title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+  }
+  
+  .card__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
+  
+  .card__footer {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #e5e5e5;
+  }
+  
+  .date::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  
+  .link__read_more {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+  }
+  
+  .link__read_more::after {
+    content: "...";
+  }
