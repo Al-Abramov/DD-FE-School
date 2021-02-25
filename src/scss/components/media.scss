@@ -1,28 +1,13 @@
-@media (min-width: 1177px) {
-    body {
-      max-width: 1200px;
-    }
+@mixin for-desktop {
+  @media (max-width: 1176px) {
+    @content;
   }
+}
 
-@media (max-width: 1176px) {
-    .main-menu__item-description {
-      display: none;
-    }
-  
-    .main-menu li {
-      justify-content: center;
-    }
-  
-    .main-menu li a {
-      padding: 10px;
-      text-align: center;
-    }
-  
-    footer {
-      margin: 0;
-    }
-  }
-  
+
+
+
+/*
   @media (max-width: 992px) {
     .wrapper {
       flex-direction: column;
@@ -147,5 +132,4 @@
     .card {
       width: 100%;
     }
-  }
-  
+  }*/

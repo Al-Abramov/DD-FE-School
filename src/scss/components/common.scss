@@ -6,11 +6,15 @@
   body {
     width: 95%;
     margin: 0 auto;
+    
+  @media all and (min-width: 1177px) {
+    max-width: 1200px;
   }
+}
   
   a {
     text-decoration: none;
-    color: #34aca7;
+    color: $link-color;
   }
   
   p,
@@ -20,6 +24,12 @@
     font-weight: normal;
   }
   
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
   .wrapper {
     display: flex;
     padding: 46px 20px;

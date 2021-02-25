@@ -1,0 +1,89 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+  }
+  
+  .logo__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*menu*/
+  .aside-navigation {
+    display: flex;
+    flex-direction: column;
+
+    li {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 31px;
+      }
+
+      a {
+        display: flex;
+        @include style (14px, initial, italic);
+        align-items: center;
+        font-weight: normal;
+      }
+
+      &__icon {
+        @include size (30px, 30px);
+        margin-right: 12px;
+      }
+
+      @each $aside-icon in food, blog, a-list, camera, about {
+        &__icon_#{$aside-icon} {
+            background-image: url('images/icon-menu/#{$aside-icon}-icon.svg');
+        }
+    }
+      /*&__icon_food {
+        background: url("images/icon-menu/food-icon.svg") no-repeat;
+      }
+
+      &__icon_blog {
+        background: url("images/icon-menu/blog-icon.svg") no-repeat;
+      }
+
+      &__icon_list {
+        background: url("images/icon-menu/a-list-icon.svg") no-repeat;
+      }
+
+      &__icon_camera {
+        background: url("images/icon-menu/camera-icon.svg") no-repeat;
+      }
+
+      &__icon_about {
+        background: url("images/icon-menu/about-icon.svg") no-repeat;
+      }*/
+  }
+
+  /*aside tweet*/
+  .tweet__title,
+  .friends__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    border-bottom: 1px dashed $lite-grey;
+    margin-bottom: 7px;
+  }
+
+  .tweet__button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include size (140px, 30px);
+    @include style (10px, initial, italic);
+    color: $link-color;
+    background: #ffffff;
+    border: 1px solid $lite-grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .friends__text {
+    @include style (10px, 19px, normal);
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }

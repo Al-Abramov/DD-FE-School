@@ -1,0 +1,13 @@
+$link-color: #34aca7;
+$lite-grey: #e5e5e5;
+
+@mixin style($fsz, $lh, $fstl) {
+    font-size: $fsz;
+    line-height: $lh;
+    font-style: $fstl;
+}
+
+@mixin size($wth, $hght) {
+    width: $wth;
+    height: $hght;
+}

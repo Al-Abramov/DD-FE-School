@@ -1,0 +1,67 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 34px;
+  border-top: 2px solid $lite-grey;
+
+  @include for-desktop {
+    margin: 0;
+  }
+}
+
+.info-menu {
+  display: flex;
+
+  &__item {
+    @include style(12px, 12px, normal);
+    letter-spacing: -0.02em;
+    padding-right: 4px;
+
+    &:not(:nth-last-of-type(1)) {
+      padding-right: 4px;
+      border-right: 1px solid $lite-grey;
+    }
+  }
+
+  li:not(:last-child):after {
+    content: "|";
+    color: #e5e5e5;
+  }
+}
+
+.rights {
+  @include style(12px, 12px, normal);
+  letter-spacing: -0.02em;
+  color: $lite-grey;
+  margin-top: 5px;
+}
+
+.footer-icons {
+  display: flex;
+
+@each $footer-icon in twitter, facebook, rss-icon {
+  &__#{$footer-icon} {
+    background: url("images/footer-icon/#{$footer-icon}.svg") no-repeat;
+  }
+}
+
+  &__twitter {
+    display: block;
+    //background: url("images/footer-icon/twitter.svg") no-repeat;
+    @include size (32px, 26px);
+  }
+
+  &__facebook {
+    display: block;
+    //background: url("images/footer-icon/facebook.svg") no-repeat;
+    @include size (17px, 32px);
+    margin-left: 7px;
+  }
+
+  &__rss {
+    display: block;
+    background: url("images/footer-icon/rss-icon.svg") no-repeat;
+    @include size (32px, 32px);
+    margin-left: 7px;
+  }
+}

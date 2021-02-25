@@ -1,0 +1,36 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "build task1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al-Abramov/DD-FE-School.git"
+  },
+  "author": "task1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Al-Abramov/DD-FE-School/issues"
+  },
+  "homepage": "https://github.com/Al-Abramov/DD-FE-School#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-normalize-scss": "^8.1.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "normalize-scss": "^7.0.1"
+  }
+}
