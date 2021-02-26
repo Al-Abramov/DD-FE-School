@@ -33,7 +33,7 @@ function scss() {
 }
 
 function images() {
-  return src('assets/**/*')
+  return src('src/img/**/*')
     .pipe(imagemin(
       [
         imagemin.gifsicle({interlaced: true}),

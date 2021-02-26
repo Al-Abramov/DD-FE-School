@@ -1,6 +1,11 @@
 main {
   width: 100%;
   padding: 0 40px 20px;
+
+  @media (max-width: 992px) {
+    padding: 0;
+    padding-bottom: 20px;
+  }
 }
 
 .baner {
@@ -11,6 +16,15 @@ main {
   padding-bottom: 70px;
   background: url("images/baner.png") 50% 50%;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 480px) {
+    background: url("images/baner-sm.png") 50% 50% no-repeat;
+    height: 353px;
+  }
 }
 
 .baner__title {
@@ -23,6 +37,12 @@ main {
   padding: 13px;
   color: #000000;
   background: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    opacity: 0.5;
+    justify-content: end;
+  }
 }
 
 .baner__description {
@@ -34,6 +54,11 @@ main {
   padding: 14px;
   color: #ffffff;
   background: #000000;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: end;
+  }
 }
 
 /*menu*/
@@ -41,25 +66,29 @@ main {
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   li {
     display: flex;
     flex: 1;
     align-items: center;
     border-left: 1px solid #f9fbfb;
     border-right: 1px solid #d6e6e6;
-    background: #eff8f7;
+    background: $tabs-color;
 
-    @include for-desktop {
+    @media (max-width: 1176px) {
       justify-content: center;
     }
   }
 
   li.active {
-    background: #d9efec;
+    background: $tabs-active;
   }
 
   li:hover {
-    background: #d9efec;
+    background: $tabs-active;
   }
 
   a {
@@ -67,7 +96,7 @@ main {
     width: 100%;
     padding: 20px;
 
-    @include for-desktop {
+    @media (max-width: 1176px) {
       padding: 10px;
       text-align: center;
     }
@@ -77,8 +106,10 @@ main {
     @include style(10px, 19px, italic);
     color: $link-color;
 
-    @include for-desktop {
-        display: none;
+    @media (max-width: 1176px) {
+      display: none;
+    }
+  }
 }
 
 /*subscribe*/
@@ -91,16 +122,24 @@ form {
   align-items: center;
   padding: 7px 18px 10px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   .subscribe {
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      padding-bottom: 10px;
+    }
 
     .subscribe__icon {
       height: 26px;
     }
 
     &__text {
-        @include style(14px, 16px, italic);
+      @include style(14px, 16px, italic);
       max-width: 530px;
       margin-left: 18px;
       color: #000000;
@@ -111,20 +150,29 @@ form {
     display: flex;
     margin-left: 8px;
 
+    @media (max-width: 768px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
     &__email {
-      @include size (160px, 22px);
+      @include size(160px, 22px);
       border: 1px solid $lite-grey;
       margin-right: 13px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     &__email::placeholder {
-        @include style(10px, 10px, normal);
+      @include style(10px, 10px, normal);
       color: $lite-grey;
       padding-left: 5px;
     }
 
     &__button {
-      @include size (80px, 23px);
+      @include size(80px, 23px);
       @include style(10px, 10px, normal);
       background: linear-gradient(180deg, #f4f3f3 0%, #bbb9b9 100%);
       border: 1px solid $lite-grey;
@@ -141,10 +189,23 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
 
+  @media (max-width: 480px) {
+    padding: 0 50px;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
     width: 23%;
+
+    @media (max-width: 768px) {
+      width: 47%;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
 
     &__image {
       width: 100%;
@@ -154,12 +215,12 @@ form {
     }
 
     &__title {
-        @include style(16px, 21px, normal);
+      @include style(16px, 21px, normal);
       letter-spacing: -0.02em;
     }
 
     &__text {
-        @include style(14px, 20px, normal);
+      @include style(14px, 20px, normal);
       letter-spacing: -0.02em;
       color: #000000;
       margin-top: 9px;
@@ -167,7 +228,7 @@ form {
     }
 
     &__footer {
-        @include style(14px, 20px, normal);
+      @include style(14px, 20px, normal);
       letter-spacing: -0.02em;
       color: $lite-grey;
 
@@ -175,16 +236,15 @@ form {
         content: "/";
         margin-left: 5px;
       }
-    
+
       .read-more {
         @include style(14px, 20px, normal);
         letter-spacing: -0.02em;
       }
-    
+
       .read-more::after {
         content: "...";
       }
     }
   }
-
 }
